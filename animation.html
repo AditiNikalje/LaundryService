@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Demo: Animated Text Overlay On Hover</title>
+<style>
+.box {
+  cursor: pointer;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+   border:1px solid #000;
+    border-radius:2px; 
+    float:left;
+    margin:20px 30px;
+}
+
+.box img {
+  position: absolute;
+  left: 0;
+  width:300px;
+ 	height:250px;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+   
+}
+
+
+
+
+
+.box .overbox {
+  background-color: #304562;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 360px;
+  height: 240px;
+  padding: 130px 20px;
+}
+
+.box:hover .overbox { opacity: 1; }
+
+.box .overtext {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+}
+
+.box .title {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+}
+
+.box:hover .title,
+.box:focus .title {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+
+.box .tagline {
+  font-size: 0.8em;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.box:hover .tagline,
+.box:focus .tagline {
+  opacity: 1;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+}
+</style>
+<link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+    
+      
+    <div class="css-script-clear"></div>
+  </div>
+</div>
+<h1 style="margin:150px auto 50px auto">Ours Events</h1>
+<div class="row">
+	<div class="col-sm-4">
+		<div class="box"> <center><img src="laundry4.jpg" ></center>
+ 		 <div class="overbox">
+   		 	<div class="title overtext">Wedding ceremony</div>
+    			<div class="tagline overtext"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 	Donec aliquet dolor libero, eget do lovess venenatis mauris finibus dictum. Vestibulum quis elit eget neque porttitor  no amet dolor. Proin pretium purus a lorem ornare dost love. </div>
+ 		 	</div>
+		</div>
+	</div>
+
+	<div class="col-sm-4">
+		<div class="box"> <img src="images/adbd.jpg">
+ 		 <div class="overbox">
+    		<div class="title overtext">Birthday </div>
+    			<div class="tagline overtext"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet dolor libero, eget do lovess venenatis mauris finibus dictum. Vestibulum quis elit eget neque porttitor  no amet dolor. Proin pretium purus a lorem ornare dost love. </div>
+  			</div>
+		</div>
+	</div>
+
+	<div class="col-sm-4">
+		<div class="box"> <img src="images/wed34.jpg">
+ 		 <div class="overbox">
+   			 <div class="title overtext">Engagement</div>
+    			<div class="tagline overtext"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet dolor libero, eget do lovess venenatis mauris finibus dictum. Vestibulum quis elit eget neque porttitor  no amet dolor. Proin pretium purus a lorem ornare dost love. </div>
+ 			 </div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

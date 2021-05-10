@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Regestration_database</title>
+</head>
+
+<body>
+
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "wcontact";
+
+$id;
+$reg_name=$_POST["name"];
+$reg_email=$_POST["email"];
+$reg_mob=$_POST["mob"];
+$reg_radd=$_POST["radd"];
+$reg_oadd=$_POST["oadd"];
+$reg_pin=$_POST["pin"];
+$reg_uname=$_POST["uname"];
+$reg_pass=$_POST["pass"];
+$reg_cpass=$_POST["cpass"];
+//$b=$_POST["btn"];
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+
+$sql = "INSERT INTO regestration(rname,remail,rmob,radd,oadd,rpin,r_uname,r_pass,r_cpass) VALUES ('$reg_name', '$reg_email', '$reg_mob', '$reg_radd', '$reg_oadd','$reg_pin','$reg_uname','$reg_pass','$reg_cpass')";
+
+
+if (mysqli_query($conn, $sql)) {
+    echo "<p><small>Regestered successfully</small></p>";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+mysqli_close($conn);
+
+?>
+
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Original_Order_DB</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+ 
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!--<style>
+  #popup {
+    visibility: hidden; 
+    background-color: red; 
+    position: absolute;
+    top: 10px;
+    z-index: 100; 
+    height: 100px;
+    width: 300px
+}
+</style>-->
+  
+</head>
+
+<body>
+
+<!--<div id="popup">
+    Record added successfully
+</div>-->
+
+
+<?php
+
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "wcontact";
+
+
+
+$id;
+
+$s=$_POST["chk1"];
+$quantity1=$_POST["name1"];
+
+$j=$_POST["chk2"];
+$quantity2=$_POST["name2"];
+
+$t=$_POST["chk3"];
+$quantity3=$_POST["name3"];
+
+$k=$_POST["chk4"];
+$quantity4=$_POST["name4"];
+
+$p=$_POST["chk5"];
+$quantity5=$_POST["name5"];
+
+
+$pc=$_POST["chk6"];
+$quantity6=$_POST["name6"];
+
+
+$b=$_POST["chk7"];
+$quantity7=$_POST["name7"];
+
+
+$jkt=$_POST["chk8"];
+$quantity8=$_POST["name8"];
+
+if($jkt==''  )
+{
+echo "<p>Please select atleast single item.</p>";	
+	
+	}
+	else
+	{
+		
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+else 
+{
+$sql= "INSERT INTO placed_order(shirt,s_quantity,jeans,j_quantity,top,t_quantity,kurta,k_quantity,pant,p_quantity,pillow_cover,pc_quantity,bedsheet,b_quantity,jacket,jkt_quantity,date) VALUES ('$s','$quantity1','$j','$quantity2','$t','$quantity3','$k','$quantity4','$p','$quantity5','$pc','$quantity6','$b','$quantity7','$jkt','$quantity8',NOW())";
+}
+
+if(mysqli_query($conn, $sql))
+{
+echo "<p>Data Inserted Successfully</p>";
+
+} else 
+{
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+/*$sql = "SELECT shirt, s_quantity, jeans FROM placed_order";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo " " . $row["shirt"]. " " . $row["s_quantity"]. " " . $row["jeans"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}*/
+
+
+mysqli_close($conn);
+	}
+?>
+
+
+
+</body>
+</html>

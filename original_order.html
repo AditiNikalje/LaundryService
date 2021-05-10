@@ -1,0 +1,862 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Original order</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+ 
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+   <script>
+  $(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+  });
+});
+
+</script>
+  
+  
+  <style>
+  
+  
+  .modal {
+	  display:block;
+  }
+  
+  body {
+  padding-top: 50px;
+}
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+   .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    background:#ecf0f1;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -40%;
+  }
+
+  .row-offcanvas-left.active {
+    left: 40%;
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    margin-left: 12px;
+  }
+}
+
+#sidebar {
+    padding:15px;
+    margin-top:10px;
+}
+
+</style>
+  
+  
+  
+  
+<script language="JavaScript">
+
+	document.f1.name1.disabled = true;
+	document.f1.name2.disabled = true;
+	document.f1.name3.disabled = true;
+	document.f1.name4.disabled = true;
+	document.f1.name5.disabled = true;
+	document.f1.name6.disabled = true;
+	document.f1.name7.disabled = true;
+	document.f1.name8.disabled = true;
+
+function enable_text(status)
+{
+	x=document.getElementById("c1").checked;
+	if(x)
+	{
+		document.f1.name1.disabled = false;
+	
+	}
+	else
+	{
+			document.f1.name1.disabled = true;
+	
+	}
+	x2=document.getElementById("c2").checked;
+	if(x2)
+	{
+		document.f1.name2.disabled = false;
+	
+	}
+	else
+	{
+			document.f1.name2.disabled = true;
+	
+	}
+			
+	x3=document.getElementById("c3").checked;
+	if(x3)
+	{
+	document.f1.name3.disabled = false;
+	
+	}
+	else
+	{
+	document.f1.name3.disabled = true;
+	
+	}
+			
+	x4=document.getElementById("c4").checked;
+	if(x4)
+	{
+	document.f1.name4.disabled = false;
+	
+	}
+	else
+	{
+	document.f1.name4.disabled = true;
+	
+	}
+			
+	x5=document.getElementById("c5").checked;
+	if(x5)
+	{
+	document.f1.name5.disabled = false;
+	
+	}
+	else
+ 	{
+	document.f1.name5.disabled = true;
+	
+	}
+			
+	x6=document.getElementById("c6").checked;
+	if(x6)
+	{
+	document.f1.name6.disabled = false;
+	
+	}
+	else
+	{
+	document.f1.name6.disabled = true;
+	
+	}
+			
+	x7=document.getElementById("c7").checked;
+	if(x7)
+	{
+	document.f1.name7.disabled = false;
+	
+	}
+	else
+	{
+	document.f1.name7.disabled = true;
+	
+	}
+			
+	x8=document.getElementById("c8").checked;
+	if(x8)
+	{
+	document.f1.name8.disabled = false;
+	
+	}
+	else
+	{
+	document.f1.name8.disabled = true;
+	
+	}
+			
+			
+			/*
+status=!status;	
+	document.f1.other_text.disabled = status;
+	document.f1.other_text1.disabled = status;
+*/
+}
+
+
+
+</script>
+  
+  
+  
+  
+  
+</head>
+
+<body onload=enable_text(false);>
+
+<body>
+
+<div class="responsive">
+<div class="container">
+
+<div class="row" style="width:100%; height:30%;">
+        	<div class="col-md-4" style="padding-top:1%;"><img src="logo5.png" class="img-thumbnail" alt="laundry" width="60" height="20" align=  	                 "right"></div>
+            <div class="col-md-4"><h3>Pick My Laundry</h3></div>
+            <div class="col-md-4" style="padding-top:2%;"><small>Contact no.:9890601524</small></div>
+         </div>
+         
+         
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  	<ul class="nav navbar-nav">
+      <li class="active"><a href="laundry_com.html">Home</a></li>
+      <li><a href="about_us.html">About us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="deom_price.html">Price</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="original_order.html">Order</a></li>
+      <li><a href="contact_us.html">Contact us</a></li>
+    </ul>
+ </div>
+ </nav>
+ 
+ <div class="row">
+ <div class="col-md-12">
+ <h3><center>Place Order</center></h3>
+ </div>
+ </div>
+ <hr>
+
+<div class="row">
+
+<!--<div class="col-md-4">-->
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+            <div class="sidebar-nav">
+                <ul class="nav">
+
+                    <li class="active"><a href="demo_order.html">Order</a></li>
+                    <li><a href="#">Cancle</a></li>
+                    <li><a href="#">History</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Cancle</a></li>
+                    <li><a href="#">History</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="#">Update Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+            <!--/.well -->
+        </div>
+<!--</div>-->
+
+
+
+
+<div class="col-md-7">
+
+ <form name="f1" class="form-horizontal" method="post" action="">
+<fieldset>
+
+<!-- Form Name -->
+<!--<legend><center>Place Order</center></legend>-->
+
+<!-- Multiple Checkboxes -->
+
+  
+  
+  <div class="row"><!--row start-->
+
+
+	<div class="col-sm-2"><!--col1-->
+		<div class="checkbox">
+    		<label for="-0">
+      			<input type="checkbox" name="chk1" id="c1" value="Shirt" onclick="enable_text(this.checked)">
+      			Shirt
+    	    </label>
+    	</div>
+	</div> <!--col1 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col2-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-users" aria-hidden=           "true"></i>
+        </span>
+			<input type="text" class="form-control"  name="name1" id="name"  		placeholder="Quantity" required/>
+	</div>
+</div><!--col2 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col3-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i>
+        </span>
+			<input type="text" class="form-control" name="a1"  id="name"  placeholder="Amount" />
+	</div>
+</div><!--col3 end-->
+
+</div><!--row end-->
+
+
+
+
+<div class="row" style="padding-top:20px;"><!--row2 start-->
+
+
+	<div class="col-sm-2"><!--col1-->
+		<div class="checkbox">
+    		<label for="-0">
+      			<input type="checkbox" name="chk2" id="c2" value="Jeans" onclick="enable_text(this.checked)">
+      			Jeans
+    	    </label>
+    	</div>
+	</div> <!--col1 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col2-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-users" aria-hidden=           "true"></i>
+        </span>
+			<input type="text" class="form-control"name="name2" id="name"  		placeholder="Quantity" required/>
+	</div>
+</div><!--col2 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col3-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i>
+        </span>
+			<input type="text" class="form-control"name="a2"  id="name"  placeholder="Amount" />
+	</div>
+</div><!--col3 end-->
+
+</div><!--row2 end-->
+
+
+
+
+
+<div class="row" style="padding-top:20px;"><!--row2 start-->
+
+
+	<div class="col-sm-2"><!--col1-->
+		<div class="checkbox">
+    		<label for="-0">
+      			<input type="checkbox" name="chk3" id="c3" value="Top" onclick="enable_text(this.checked)">
+      			Top
+    	    </label>
+    	</div>
+	</div> <!--col1 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col2-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-users" aria-hidden=           "true"></i>
+        </span>
+			<input type="text" class="form-control"name="name3" id="name"  		placeholder="Quantity" required/>
+	</div>
+</div><!--col2 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col3-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i>
+        </span>
+			<input type="text" class="form-control"name="a3"  id="name"  placeholder="Amount" />
+	</div>
+</div><!--col3 end-->
+
+</div><!--row2 end-->
+
+
+
+
+
+<div class="row" style="padding-top:20px;"><!--row2 start-->
+
+
+	<div class="col-sm-2"><!--col1-->
+		<div class="checkbox">
+    		<label for="-0">
+      			<input type="checkbox" name="chk4" id="c4" value="Kurta" onclick="enable_text(this.checked)">
+      			Kurta
+    	    </label>
+    	</div>
+	</div> <!--col1 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col2-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-users" aria-hidden=           "true"></i>
+        </span>
+			<input type="text" class="form-control"name="name4" id="name"  		placeholder="Quantity" required/>
+	</div>
+</div><!--col2 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col3-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i>
+        </span>
+			<input type="text" class="form-control"name="a4"  id="name"  placeholder="Amount" />
+	</div>
+</div><!--col3 end-->
+
+</div><!--row2 end-->
+
+
+
+
+
+
+
+<div class="row" style="padding-top:20px;"><!--row2 start-->
+
+
+	<div class="col-sm-2"><!--col1-->
+		<div class="checkbox">
+    		<label for="-0">
+      			<input type="checkbox" name="chk5" id="c5" value="Pant" onclick="enable_text(this.checked)">
+      			Pant
+    	    </label>
+    	</div>
+	</div> <!--col1 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col2-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-users" aria-hidden=           "true"></i>
+        </span>
+			<input type="text" class="form-control"name="name5" id="name"  		placeholder="Quantity" required/>
+	</div>
+</div><!--col2 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col3-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i>
+        </span>
+			<input type="text" class="form-control"name="a5"  id="name"  placeholder="Amount" />
+	</div>
+</div><!--col3 end-->
+
+</div><!--row2 end-->
+
+
+
+
+
+
+
+<!--Audiii-->
+<div class="row" style="padding-top:20px;"><!--row2 start-->
+
+
+	<div class="col-sm-2"><!--col1-->
+		<div class="checkbox">
+    		<label for="-0">
+      			<input type="checkbox" name="chk6" id="c6" value="Pillow Cover" onclick="enable_text(this.checked)">
+      			Pillow Cover
+    	    </label>
+    	</div>
+	</div> <!--col1 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col2-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-users" aria-hidden=           "true"></i>
+        </span>
+			<input type="text" class="form-control"name="name6" id="name"  		placeholder="Quantity" required/>
+	</div>
+</div><!--col2 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col3-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i>
+        </span>
+			<input type="text" class="form-control"name="a6"  id="name"  placeholder="Amount" />
+	</div>
+</div><!--col3 end-->
+
+</div><!--row2 end-->
+
+
+
+
+
+<div class="row" style="padding-top:20px;"><!--row2 start-->
+
+
+	<div class="col-sm-2"><!--col1-->
+		<div class="checkbox">
+    		<label for="-0">
+      			<input type="checkbox" name="chk7" id="c7" value="Bedsheet" onclick="enable_text(this.checked)">
+      			Bedsheet
+    	    </label>
+    	</div>
+	</div> <!--col1 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col2-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-users" aria-hidden=           "true"></i>
+        </span>
+			<input type="text" class="form-control"name="name7" id="name"  		placeholder="Quantity" required/>
+	</div>
+</div><!--col2 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col3-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i>
+        </span>
+			<input type="text" class="form-control"name="a7"  id="name"  placeholder="Amount" />
+	</div>
+</div><!--col3 end-->
+
+</div><!--row2 end-->
+
+
+
+
+
+
+
+<div class="row" style="padding-top:20px;"><!--row2 start-->
+
+
+	<div class="col-sm-2"><!--col1-->
+		<div class="checkbox">
+    		<label for="-0">
+      			<input type="checkbox" name="chk8" id="c8" value="Jacket" onclick="enable_text(this.checked)">
+      			Jacket
+    	    </label>
+    	</div>
+	</div> <!--col1 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col2-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-users" aria-hidden=           "true"></i>
+        </span>
+			<input type="text" class="form-control"name="name8" id="name"  		placeholder="Quantity" required/>
+	</div>
+</div><!--col2 end-->
+
+
+<div class="col-sm-3" style="padding-top:2px;"><!--col3-->
+	<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i>
+        </span>
+			<input type="text" class="form-control"name="a8"  id="name"  placeholder="Amount" />
+	</div>
+</div><!--col3 end-->
+
+</div><!--row2 end-->
+
+
+
+
+<br>
+<hr>
+<br>
+<div class="row"><!--row x-->
+
+<div class="col-md-3" style="padding-top:4px;">
+<label for="name" class="cols-sm-2 control-label">Total Amount</label>
+</div>
+
+
+<div class="col-md-3">
+<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i>
+        </span>
+			<input type="text" class="form-control" name="t_amt"  id="name"  		placeholder="Total amount" />
+	</div>
+</div>
+
+</div>
+
+
+<br>
+<div class="row"><!--row x-->
+
+<div class="col-md-3" style="padding-top:4px;">
+<label for="name" class="cols-sm-2 control-label">Inc. Tax</label>
+</div>
+
+
+<div class="col-md-3">
+<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i>
+        </span>
+			<input type="text" class="form-control"name="inc_tax"  id="name"  		placeholder="Tax" />
+	</div>
+</div>
+
+
+
+</div>
+
+<br>
+<div class="row"><!--row x-->
+
+<div class="col-md-3" style="padding-top:4px;">
+<label for="name" class="cols-sm-2 control-label">Final Amount</label>
+</div>
+
+
+<div class="col-md-3">
+<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i>
+        </span>
+			<input type="text" class="form-control"name="f_amt"  id="name"  		placeholder="Final amount" />
+	</div>
+</div>
+
+
+
+</div>
+
+
+
+<br>
+<br>
+<div class="row">
+<div class="col-md-4">
+<div class="form-group">
+  <label class="col-md-4 control-label" for="ok"></label>
+  <div class="col-md-4">
+  
+    <button type="submit" class="btn btn-primary " data-toggle="modal" data-target="#myModal" id="ok" name="ok">Submit</button>
+  </div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="form-group">
+  <label class="col-md-4 control-label" for="ok"></label>
+  <div class="col-md-4">
+  
+    <button type='submit' id="cancle" name="cancle" class="btn btn-primary">Cancle</button>
+  </div>
+</div>
+</div>
+
+</div>
+</fieldset>
+</form>
+</div><!--Audii-->
+<div class="col-md-1">
+<img src="vertical.jpg" alt="ver"/>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<div class="row" style="height:35%;">
+ 
+ 
+<footer id="footer">
+<div class="social text-center">
+<a href="#"><i class="fa fa-twitter" style="font-size:40px;"></i></a>&nbsp;&nbsp;
+<a href="#"><i class="fa fa-facebook" style="font-size:40px;"></i></a>&nbsp;&nbsp;
+<a href="#"><i class="fa fa-dribbble" style="font-size:40px;"></i></a>&nbsp;&nbsp;
+<a href="#"><i class="fa fa-flickr" style="font-size:40px;"></i></a>&nbsp;&nbsp;
+<a href="#"><i class="fa fa-github" style="font-size:40px;"></i></a>&nbsp;&nbsp;
+</div>
+<div class="clear"></div>
+
+
+</div>
+
+
+<br>
+ <br>
+ 
+ 
+<div class="row">
+<div class="col-md-12" style="background-color:#000; color:#CCC; height:40px; text-align:justify"><small><center>Copyright © 2015· PML Solutions Pvt Ltd. All rights reserved</center></small></div> 
+</div>
+
+
+
+
+</div>
+</div>
+
+
+
+<!-- <?php
+
+if(isset($_POST['ok']))
+{
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "wcontact";
+
+
+
+$id;
+
+$s= !empty($_POST["chk1"]) ? $_POST["chk1"] : '';
+$quantity1= !empty($_POST["name1"]) ? $_POST["name1"] :'';
+
+$j= !empty($_POST["chk2"]) ? $_POST["chk2"] :'';
+$quantity2=!empty($_POST["name2"]) ? $_POST["name2"] :'';
+
+$t=!empty($_POST["chk3"]) ? $_POST["chk3"] :'';
+$quantity3=!empty($_POST["name3"]) ? $_POST["name3"] :'';
+
+$k=!empty($_POST["chk4"]) ? $_POST["chk4"] :'';
+$quantity4=!empty($_POST["name4"]) ? $_POST["name4"] :'';
+
+$p=!empty($_POST["chk5"]) ? $_POST["chk5"] :'';
+$quantity5=!empty($_POST["name5"]) ? $_POST["name5"] :'';
+
+
+$pc=!empty($_POST["chk6"]) ? $_POST["chk6"] :'';
+$quantity6=!empty($_POST["name6"]) ? $_POST["name6"] :'';
+
+
+$b=!empty($_POST["chk7"]) ? $_POST["chk7"] :'';
+$quantity7=!empty($_POST["name7"]) ? $_POST["name7"] :'';
+
+
+$jkt=!empty($_POST["chk8"]) ? $_POST["chk8"] :'';
+$quantity8=!empty($_POST["name8"]) ? $_POST["name8"] :'';
+
+if($s=='' && $j=='' && $t=='' && $k=='' && $p=='' && $pc=='' && $b=='' && $jkt==''  )
+{
+	
+	
+	?> -->
+<!-- <div id="myModal" class="modal fade in" role="dialog">
+  <div class="modal-dialog"> -->
+
+    <!-- Modal content-->
+    <!-- <div class="modal-content">
+      <div class="modal-header" style="background:#039;">
+        <button type="submit" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="color:#FFF;">Warning!!!</h4>
+      </div>
+      <div class="modal-body">
+        <p>Select at least one item</p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" data-dismiss="modal">ok</button>
+      </div>
+    </div>
+
+  </div>
+</div> -->
+
+<?php	
+	
+	
+	}
+	else
+	{
+		
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+else 
+{
+$sql= "INSERT INTO placed_order(shirt,s_quantity,jeans,j_quantity,top,t_quantity,kurta,k_quantity,pant,p_quantity,pillow_cover,pc_quantity,bedsheet,b_quantity,jacket,jkt_quantity,date) VALUES ('$s','$quantity1','$j','$quantity2','$t','$quantity3','$k','$quantity4','$p','$quantity5','$pc','$quantity6','$b','$quantity7','$jkt','$quantity8',NOW())";
+}
+
+if(mysqli_query($conn, $sql))
+{
+//echo "<p>Data Inserted Successfully</p>";
+?>
+
+
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" style="background:#039;">
+        <button type="submit" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Pick My Laundry</h4>
+      </div>
+      <div class="modal-body">
+        <h5>Order is placed</h5>
+        <h3> Thank you!!!</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<?php
+} else 
+{
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+/*$sql = "SELECT shirt, s_quantity, jeans FROM placed_order";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo " " . $row["shirt"]. " " . $row["s_quantity"]. " " . $row["jeans"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}*/
+
+
+mysqli_close($conn);
+	}
+	
+	?>
+    
+     <script type="text/javascript"> 
+       $(document).ready(function(){
+           $('#myModal').modal('show');
+       });
+      </script>
+    
+    
+    
+    <?php
+}
+?>
+
+</body>
+</html>
